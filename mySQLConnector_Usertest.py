@@ -39,8 +39,6 @@ try:
             print("Hi", ui, "The credentials entered are not matching in our records.")
             count += 1
 
-
-
 except mysql.connector.Error as error:
     print("Failed to get record from the database: {}".format(error))
 

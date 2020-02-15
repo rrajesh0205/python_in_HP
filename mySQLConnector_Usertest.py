@@ -33,12 +33,12 @@ try:
         ui =    input("Enter your username : ")
         uipw =  input("Enter your password : ")
         if ui == record[0] and uipw == record1[0]:
-            print("Hi", ui, "You have been logged to")
+            print("Hi!", ui,", You have been logged in.")
             count = 5
         else:
-            print("wrong")
+            print("Hi!", ui,", The credentials entered are not matching in our records.")
             if count == 3:
-                print("Hi", ui, "The credentials entered are not matching in our records.")
+                print("Hi!", ui,", You have exceeded the maximum number of attempts.")
             count += 1
 
 

@@ -28,17 +28,17 @@ try:
     uipw = record1[0]
 
     print('Please Enter correct your username and password to Login')
-    count = 1
-    while count < 4:
+    count = 0
+    while count < 3:
         ui =    input("Enter your username : ")
         uipw =  input("Enter your password : ")
         if ui == record[0] and uipw == record1[0]:
             print("Hi", ui, "You have been logged to")
-        break
-        print("Hi", ui, "The credentials entered are not matching in our records.")
-    count += 1
-    if count == 4:
-        print("Hi", ui, "You have exceeded the maximum number of attempts")
+            count =5
+        else:
+            print("Hi", ui, "The credentials entered are not matching in our records.")
+            count += 1
+
 
 
 except mysql.connector.Error as error:

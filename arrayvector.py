@@ -1,0 +1,10 @@
+from numpy import *
+arr = array([12,4,6,10,5])
+print ("SIN: ", sin(arr))
+print ("COS:", cos(arr))
+print ("LOG:", log(arr))
+print ("Square root:", sqrt(arr))
+print ("Sum:", sum(arr))
+print ("Minimum:", min(arr))
+print ("Maximum:", max(arr))
+print ("Sort:", sort(arr))

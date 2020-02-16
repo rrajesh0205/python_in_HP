@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.confirmOnExit": true,
+    "terminal.integrated.cursorBlinking": true,
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.fontWeightBold": "normal",
+    "editor.fontFamily": "Cascadia Code PL, 'Courier New', Cascadia Code PL",
+    "terminal.integrated.fontSize": 16
+}

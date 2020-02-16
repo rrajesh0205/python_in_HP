@@ -3,6 +3,7 @@ import mysql.connector as mysql
 db = mysql.connect(host = "localhost", user = "rrajesh0205", passwd = "Longines0205", database = "usertest")
 
 ## defining the Query to fetch the user
+
 query = "SELECT name FROM usernew where id =%s"
 id = (1,)
 cursor = db.cursor()
@@ -10,6 +11,7 @@ cursor.execute(query, id)
 record = cursor.fetchone()
 
 ## defining the Query to fetch the password
+
 query = "SELECT code FROM usernew where id =%s"
 id = (1,)
 cursor = db.cursor()
@@ -18,10 +20,12 @@ record1 = cursor.fetchone()
 
 
 ## Assigning the fetched data to the User Input data
+
 user_name = record[0]
 uipw = record1[0]
 
 ## Getting the user input and cross checking with the database
+
 print('Please Enter correct your username and password to Login')
 count = 1
 while count < 4:
@@ -37,5 +41,6 @@ while count < 4:
         count += 1
 
 ## Closing the cursor and the database
+
 cursor.close()
 db.close()

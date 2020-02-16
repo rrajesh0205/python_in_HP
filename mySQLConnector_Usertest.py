@@ -21,6 +21,7 @@ record1 = cursor.fetchone()
 user_name = record[0]
 uipw = record1[0]
 
+## Getting the user input and cross checking with the database
 print('Please Enter correct your username and password to Login')
 count = 1
 while count < 4:
@@ -35,6 +36,7 @@ while count < 4:
             print("Hi!", ui,", You have exceeded the maximum number of attempts.")
         count += 1
 
+## Closing the cursor and the database
 cursor.close()
 db.close()
 

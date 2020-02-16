@@ -18,7 +18,6 @@ cursor = db.cursor()
 cursor.execute(query, id)
 record1 = cursor.fetchone()
 
-
 ## Assigning the fetched data to the User Input data
 
 user_name = record[0]

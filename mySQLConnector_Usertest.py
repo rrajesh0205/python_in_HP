@@ -39,11 +39,3 @@ while count < 4:
 ## Closing the cursor and the database
 cursor.close()
 db.close()
-
-
-
-
-
-
-
-

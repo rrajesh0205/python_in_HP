@@ -35,6 +35,9 @@ while count < 4:
             print("Hi!", ui,", You have exceeded the maximum number of attempts.")
         count += 1
 
+cursor.close()
+db.close()
+
 
 
 

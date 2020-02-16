@@ -1,22 +1,17 @@
 import mysql.connector as mysql
 
-connection = mysql.connect(
-    host = "localhost",
-    user = "rrajesh0205",
-    passwd = "Longines0205",
-    database = "usertest"
-    )
+db = mysql.connect(host = "localhost", user = "rrajesh0205", passwd = "Longines0205", database = "usertest")
 
-    ## defining the Query
+## defining the Query
 query = "SELECT name FROM usernew where id =%s"
 id = (1,)
-cursor = connection.cursor()
+cursor = db.cursor()
 cursor.execute(query, id)
 record = cursor.fetchone()
 
 query = "SELECT code FROM usernew where id =%s"
 id = (1,)
-cursor = connection.cursor()
+cursor = db.cursor()
 cursor.execute(query, id)
 record1 = cursor.fetchone()
 
